@@ -1,0 +1,91 @@
+/* background style */
+body{
+    background-image: url('images/background.jpg');
+    background-size: cover;
+}
+
+/* style of grid container */
+.grid-container{
+    background-color: rgba(2, 2, 2, 0.8);
+    position:absolute;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    column-gap: 50px;
+}
+
+/* this is style of left side and font of its title*/
+.one{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding:25px;
+    justify-content: center;
+    color: rgb(170, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* style of right side and its color */
+.two{
+    display: flex;
+    flex-direction: column;
+    color: rgb(170, 255, 255);
+    text-align: left;
+    line-height: 2px;
+    padding-top: 30px;
+}
+
+/* this is style of server's result
+like gender, percentage and count */
+.three{
+    display: flex;
+    flex-direction: column;
+    color: rgb(82, 184, 184);
+    text-align: left;
+    line-height: 0px;
+}
+
+/* style of Name, Male and Female label */
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: rgb(170, 255, 255);
+    margin: .4rem 0;
+}
+
+/* style of Save, Delete and Submit button */
+button {
+    margin: .8rem 0;
+    width:70px;
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #284f6b;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    padding: 8px .8em; 
+}
+
+/* when mouse curser comes inside of the bottuns their
+font color and background color will be changed */
+button:hover {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+ 
+/* style of radio buttons */
+.radio-button{
+    display: inline-block;
+    margin: 8px;
+}
+
+/* style of any header in HTML */
+h1{
+    font-size: 1.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/icon.png">
+  <script type="text/javascript" src="main.js"></script>
+  <title>Gender Prediction</title>
+</head>
+
+
+<body>
+
+  <div class='grid-container'>
+    <div class='one'>
+      <h1>Mr.? or Ms.? </h1>
+      <label for='name'>Name
+        <!-- here we check the name's length and inputs alphabet -->
+        <input type='text' id='name' name='name' maxlength='255' size='12'
+          onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)">
+      </label>
+
+      <div class='radio-button'>
+        <label for='male'><input type='radio' id='male' name='gender' checked /> Male</label>
+        <label for='female'><input type='radio' id='female' name='gender'> Female</label>
+      </div>
+
+      <div class='button'>
+        <button type='Submit' onclick='submit();'>Submit</button>
+        <button type='Save' onclick='save();'>Save</button>
+      </div>
+
+    </div>
+    <div class='two'>
+      <h1>Prediction</h1>
+      <div class='three'>
+        <p id='gender'></p>
+        <p id='percent'></p>
+        <p id='count'></p>
+      </div>
+      <h1 id="saved-answer"></h1>
+      <div class="three">
+        <p id='saved-gender'></p>
+      </div>
+      <button type='Remove' onclick='remove();'>Delete</button>
+    </div>
+  </div>
+</body>
+
+</html>
